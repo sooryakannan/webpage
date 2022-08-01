@@ -22,7 +22,7 @@ header {
 .nav-item a {
     text-decoration: none;
     color:white;
-    margin-right: 20px;
+    margin-right: 5px;
 }
 
 .nav-item:first-child{
@@ -57,21 +57,42 @@ body{
 nav {
     background-color: #0e81c0;
     width: 100%;
+    box-sizing: border-box;
+    padding: 0px 10px;
 
 }
 
 .row{
     display: flex;
     list-style-type: disc;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     height: 80px;
     color: white;
 }
 
 .col{
-    list-style: none;
+    list-style: none;   
     
+}
+.col p{
+    margin: 0px;
+}
+
+
+.photo-wrap{
+    display: flex;
+    align-items: center;
+}
+
+.user-name{
+    padding-left: 5px;
+}
+
+.split {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 /* this style is for section  */
@@ -203,6 +224,15 @@ section .main {
     color: white;
     text-decoration: none;
 }
+
+.div2 li:nth-child(even) a {
+    padding-left: 0px;
+}
+
+.div2 li:nth-child(odd) a {
+    padding-right:0px;
+}
+
 /* this is style is for sub-main  */
 .sub-main a {
     text-decoration: none;
